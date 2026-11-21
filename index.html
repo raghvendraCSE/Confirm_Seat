@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ConfirmSeat helps students and working professionals explore rental accommodation with clearer property details and simple enquiries.">
+  <meta name="theme-color" content="#0d3970">
+  <title>ConfirmSeat | Find a home you can trust</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="ConfirmSeat home">
+        <img src="./assets/confirmseat-logo.png" alt="ConfirmSeat logo">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#homes">Explore homes</a><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQs</a>
+        <a class="nav-cta" href="#contact">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> A smarter way to find a rental</span>
+          <h1>Find a place<br><span>that feels like home.</span></h1>
+          <p class="hero-text">Searching for a room, PG, or flat near your college or workplace? ConfirmSeat helps make your rental search simpler with useful property details, clearer pricing, and an easier way to connect.</p>
+          <div class="hero-actions"><a class="button button-green" href="#homes">Explore rental options <span>→</span></a><a class="text-link" href="#how">See how it works</a></div>
+          <div class="hero-points"><span>✓ Student friendly</span><span>✓ Budget conscious</span><span>✓ Simple enquiries</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="logo-panel"><img src="./assets/confirmseat-logo.png" alt="ConfirmSeat — rental search platform"></div>
+          <div class="floating-card float-top"><span class="float-icon">⌂</span><span><b>Find your space</b><small>Rooms · PGs · Flats</small></span></div>
+          <div class="floating-card float-bottom"><span class="float-check">✓</span><span><b>Compare with clarity</b><small>Details at a glance</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div class="container trust-items"><div><b>01</b><span>Explore options</span></div><div><b>02</b><span>Compare details</span></div><div><b>03</b><span>Contact with ease</span></div></div></section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">MADE FOR YOUR NEXT MOVE</span><h2>Rental search, made easier.</h2><p>Helpful tools to make your accommodation search more organised and informed.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon blue-icon">⌂</div><h3>Useful property details</h3><p>Explore rooms, PGs, and flats with rental prices, locations, and facility information.</p></article>
+          <article class="feature-card"><div class="feature-icon green-icon">✓</div><h3>Trust-focused approach</h3><p>Review the information available and contact the team when you need more clarity.</p></article>
+          <article class="feature-card"><div class="feature-icon gold-icon">₹</div><h3>Budget-friendly discovery</h3><p>Use rent filters to narrow options and focus on places within your monthly budget.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section listings-section" id="homes">
+      <div class="container">
+        <div class="section-heading align-left"><span class="eyebrow">START EXPLORING</span><h2>Find a rental that fits.</h2><p>Try the filters below. These sample listings demonstrate the experience and are not live property offers.</p></div>
+        <div class="filter-panel">
+          <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search by area or property name" aria-label="Search by area or property name"></label>
+          <select id="typeFilter" aria-label="Filter by property type"><option value="all">All property types</option><option value="PG">PG</option><option value="Room">Room</option><option value="Flat">Flat</option></select>
+          <select id="budgetFilter" aria-label="Filter by maximum monthly rent"><option value="999999">Any budget</option><option value="5000">Up to ₹5,000</option><option value="8000">Up to ₹8,000</option><option value="12000">Up to ₹12,000</option><option value="15000">Up to ₹15,000</option></select>
+          <button class="button button-outline" id="resetFilters" type="button">Reset</button>
+        </div>
+        <div class="results-line"><span id="resultCount">Showing sample options</span><button class="saved-toggle" id="savedToggle" type="button">♡ Saved <span id="savedCount">0</span></button></div>
+        <div class="property-grid" id="propertyGrid" aria-live="polite"></div>
+        <p class="disclaimer">Demo notice: listings, prices, and facilities below are illustrative sample data, not live or verified properties. Always independently confirm property details and payment terms.</p>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how"><div class="container"><div class="section-heading"><span class="eyebrow">A SIMPLE JOURNEY</span><h2>From search to your next stay.</h2><p>Keep your rental search clear and manageable.</p></div><div class="steps-grid"><article class="step-card"><span>01</span><h3>Explore</h3><p>Browse sample rental options and discover the kinds of places available.</p></article><article class="step-card"><span>02</span><h3>Compare</h3><p>Review location, rent, property type, and listed facilities.</p></article><article class="step-card"><span>03</span><h3>Connect</h3><p>Send your requirements to ConfirmSeat and ask for more information.</p></article><article class="step-card"><span>04</span><h3>Choose</h3><p>Make your decision after checking the property and terms yourself.</p></article></div></div></section>
+
+    <section class="section faq-section" id="faq"><div class="container faq-layout"><div class="section-heading align-left"><span class="eyebrow">GOOD TO KNOW</span><h2>Questions, answered.</h2><p>A few details about this ConfirmSeat website preview.</p></div><div class="faq-list">
+      <details><summary>Are these real rental properties?</summary><p>No. The current website uses sample listings to demonstrate search and filtering. They are not live offers.</p></details>
+      <details><summary>Can I save properties?</summary><p>Yes. Use the heart button on a sample listing. Your saved list stays in this browser on this device.</p></details>
+      <details><summary>Can I book or pay through this website?</summary><p>No. This is a front-end demonstration. It does not process bookings, payments, or identity verification.</p></details>
+      <details><summary>How can I contact ConfirmSeat?</summary><p>Use the enquiry form below or email rnc93056@gmail.com. The form opens your email application with your message prepared.</p></details>
+    </div></div></section>
+
+    <section class="contact-section" id="contact"><div class="container contact-layout"><div class="contact-copy"><span class="eyebrow light-eyebrow">LET'S CONNECT</span><h2>Looking for a place<br>or listing a property?</h2><p>Tell us what you need. We'd be happy to hear from students, working professionals, and property owners.</p><div class="contact-email"><span class="mail-icon">✉</span><div><small>EMAIL US</small><a href="mailto:rnc93056@gmail.com">rnc93056@gmail.com</a></div></div></div>
+      <form class="contact-form" id="contactForm"><h3>Send an enquiry</h3><p>Complete the details and your email app will open with the message ready to send.</p><label>Your name<input id="visitorName" name="name" required placeholder="Enter your name"></label><label>Your email<input id="visitorEmail" name="email" type="email" required placeholder="you@example.com"></label><label>I'm interested in<select id="enquiryType"><option>Finding a rental</option><option>Listing a property</option><option>General enquiry</option></select></label><label>Your message<textarea id="visitorMessage" name="message" required rows="4" placeholder="Tell us your preferred area, budget, or question..."></textarea></label><button class="button button-green submit-button" type="submit">Prepare email <span>→</span></button><span class="form-note">This form uses your device's email application; it does not send data to a server.</span></form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#home"><img src="./assets/confirmseat-logo.png" alt="ConfirmSeat logo"></a><span>© <span id="year"></span> ConfirmSeat. All rights reserved.</span><a href="mailto:rnc93056@gmail.com">Contact ConfirmSeat ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js" defer></script>
+</body>
+</html>
