@@ -54,7 +54,7 @@ git clone https://github.com/raghvendracse/ConfirmSeat.git
 
 ## 🌐 Live Website
 
-[Visit ConfirmSeat](https://raghvendracse.github.io/ConfirmSeat/)
+[Visit ConfirmSeat](https://raghvendracse.github.io/Confirm_Seat/)
 
 ## 📩 Contact
 
